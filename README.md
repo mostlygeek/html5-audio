@@ -16,3 +16,7 @@ Sound in HTML5 games is generally pretty crappy. SoundJS is designed to fill in 
 * playing sounds triggered by events (any play latency)
 * playing multiple sounds at once. The `<audio>` tag can not do this natively. 
 
+Demo
+----
+
+[http://createjs-amd.herokuapp.com/](http://createjs-amd.herokuapp.com/)

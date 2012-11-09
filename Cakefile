@@ -60,3 +60,7 @@ task 'dev', 'start dev env', ->
   supervisor.stderr.pipe process.stderr
   log 'Watching js and jade files and running server', green
   
+task 'run', 'start production env', -> 
+  process.env["NODE_ENV"] = "production"
+  spawn 'coffee', ['server.coffee']
+
