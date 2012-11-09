@@ -3,12 +3,33 @@ html
     head
         title Example Page
         link(href="/css/test.css",rel="stylesheet")
-        script(src="/js/test.js")
+        script(src='/js/require-jquery.min.js',data-main="/js/main")
     body
-        :markdown
-            # It's Awesome
+        #loading.panel
+            h1 Loading...
+            span Percent: 
+            span#progress 0%
 
-        :coffeescript
-            document.write "In Jade CoffeeScript works"
-            # from test.coffee, transpiled dynamically to /js/test.js
-            loaded "... so does included coffeescript"
+        #control.panel(style="display: none")            
+            h2 onClick Triggering Demo
+
+            button#laser
+                span Laser Beam
+            p.note
+                | One click, plays one instance of the laser beam sound.  Since
+                | multiple instances are created, playing back works as fast
+                | as you can click
+
+            button#multi-shot
+                span Laser Multi-Shot
+            p.note 
+                | This plays the laser beam sound multple times concurrently
+                | before the first one even finishes. Demos effectiveness of 
+                | using multiple audio tags to mix sounds together
+
+            h2 mouseover Demo        
+
+            - for (var i=0; i < 10; i++) { 
+                span.mouseover= i
+            - }
+

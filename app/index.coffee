@@ -37,6 +37,7 @@ app.configure ->
         src:    "#{__base}/app/public/src"
         dest:   "#{__base}/app/public/generated"
         bare:   false
+        force:  if app.get("env") == "production" then false else true
 
     # serve both static (.jpg/.png/etc) and generated files
     app.use express.static "#{__base}/app/public/generated"
