@@ -1,0 +1,30 @@
+{
+    "name": "coffee-express"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "coffee-script": "*"
+    , "underscore" : "*"
+    , "express": "3.x" 
+    , "jade": "latest"
+    , "stylus": "latest"
+    , "nib": "latest"
+    , "connect-coffee-script" : "latest"
+    , "markdown": "0.3.1"
+    , "which": "*"
+    , "async" : "0.1.x"
+  }, "scripts": {
+    "test": "mocha --require should --compilers coffee:coffee-script --colors"
+  }, "devDependencies": {
+      "mocha": "*"
+    , "should": "*"
+    , "request": "*"
+    , "supervisor": "*"
+    , "docco": "*"
+    , "commander": "*"
+  }, 
+  "engines": {
+     "node": "0.8.x"
+    ,"npm" : "1.1.49"
+  }
+}
