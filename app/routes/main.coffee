@@ -9,7 +9,7 @@ module.exports = (app) ->
 
     app.get '/sound-js-0.3.0', (req, res) ->
         res.render "demo",
-            title: "PreloadJS 0.2.0 + SoundJS 0.3.0"
+            title: "PreloadJS v0.2.0 + SoundJS v0.3.0"
             config: 
                 paths: 
                     preloadjs: [
@@ -27,7 +27,7 @@ module.exports = (app) ->
 
     app.get '/sound-js-0.4.0', (req, res) ->
         res.render "demo",
-            title: "PreloadJS 0.3.0 + SoundJS 0.4.0"
+            title: "PreloadJS v0.3.0 + SoundJS v0.4.0"
             config: 
                 paths: 
                     preloadjs: [

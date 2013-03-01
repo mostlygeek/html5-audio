@@ -1,25 +1,28 @@
 doctype 5
 html
     head
-        title CreateJS + SoundJS + PreloadJS + RequireJS
+        title RequireJS + SoundJS + PreloadJS 
+        link(href="/css/test.css",rel="stylesheet")
 
     body
-        :markdown
-            # About
+        h1 RequireJS + SoundJS + PreloadJS
+        .panel
+            :markdown
+                ## About
 
-            Demonstration of loading [CreateJS](http://createjs.com) libraries using 
-            [require.js](http://requirejs.org/).
+                Demonstration of loading [CreateJS](http://createjs.com) libraries using 
+                [require.js](http://requirejs.org/).
 
-            The demos show case using PreloadJS and SoundJS together. There are two 
-            demos, one showing the older soundjs-0.3.0 and the latest soundjs-0.4.0.
+                The demos show case using PreloadJS and SoundJS together. There are two 
+                demos, one showing the older soundjs-0.3.0 and the latest soundjs-0.4.0.
 
-            * [SoundJS 0.3.0](/sound-js-0.3.0)
-            * [SoundJS 0.4.0](/sound-js-0.4.0)
+                * [SoundJS 0.3.0](/sound-js-0.3.0)
+                * [SoundJS 0.4.0](/sound-js-0.4.0)
 
-            ## Note
+                ## Note
 
-            SoundJS 0.4.0 has issues playing multiple channels
-            on Firefox (v19) as of this writing. It works perfectly in 
-            in Chrome and its [WebAudio API](http://bit.ly/Z5dHLz).
+                SoundJS 0.4.0 has issues playing multiple channels
+                on Firefox (v19) as of this writing. It works perfectly in 
+                in Chrome and its [WebAudio API](http://bit.ly/Z5dHLz).
 
 
