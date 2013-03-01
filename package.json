@@ -3,7 +3,7 @@
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
-      "coffee-script": "*"
+      "coffee-script": "1.4.x"
     , "underscore" : "*"
     , "express": "3.x" 
     , "jade": "latest"
