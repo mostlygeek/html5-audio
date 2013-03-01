@@ -3,23 +3,6 @@
 # via AMD loading and plays sounds and stuff
 # 
 #
-require.config
-    paths: 
-        preloadjs: [
-            'http://code.createjs.com/preloadjs-0.2.0.min'
-            'libs/preloadjs-0.2.0.min'
-        ]
-        soundjs: [
-            'http://code.createjs.com/soundjs-0.3.0.min'
-            'libs/soundjs-0.3.0.min'
-        ]
-
-    shim: 
-        preloadjs: 
-            exports: 'createjs.PreloadJS'
-        soundjs: 
-            exports: 'createjs.SoundJS'
-
 require [
 
     'jquery'
@@ -66,7 +49,7 @@ require [
         # Simulate firing a gun multiple times 
         # we use a setTimeout to space the shots a few ms apart
         $('#multi-shot', $control).on 'click', ->
-            for i in [0...3]
+            for i in [0..4]
                 do (i) -> 
                     setTimeout -> 
                         SoundJS.play "laser"

@@ -48,7 +48,7 @@ app.configure ->
     app.set 'views', "#{__base}/app/views"
 
 # Add routes to the application
-require("./routes/example")(app)
+require("./routes/main")(app)
 
 # Define Port
 port = process.env.PORT  or 3000

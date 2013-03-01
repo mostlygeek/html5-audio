@@ -3,8 +3,24 @@ html
     head
         title Example Page
         link(href="/css/test.css",rel="stylesheet")
+        script
+            require = !{JSON.stringify(config)}
+                
         script(src='/js/require-jquery.min.js',data-main="/js/main")
+
+        :stylus
+            button
+                width 150px
+
     body
+        a(href="/") Home
+        |  | 
+        a(href="/sound-js-0.3.0") SoundJS 0.3.0
+        |  | 
+        a(href="/sound-js-0.4.0") SoundJS 0.4.0
+
+        h1 #{title}
+
         #loading.panel
             h1 Loading...
             span Percent: 
@@ -21,7 +37,7 @@ html
                 | as you can click
 
             button#multi-shot
-                span Laser Multi-Shot
+                span 5x Laser Multi-Shot
             p.note 
                 | This plays the laser beam sound multple times concurrently
                 | before the first one even finishes. Demos effectiveness of 
