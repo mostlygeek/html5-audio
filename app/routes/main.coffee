@@ -42,3 +42,21 @@ module.exports = (app) ->
                         exports: 'createjs.LoadQueue'
                     soundjs: 
                         exports: 'createjs.Sound'
+
+    app.get '/sound-js-NEXT', (req, res) ->
+        res.render "demo",
+            title: "PreloadJS v0.3.0 + SoundJS v.NEXT"
+            config: 
+                paths: 
+                    preloadjs: [
+                        'http://code.createjs.com/preloadjs-0.3.0.min'
+                    ] 
+                    soundjs: [
+                        'https://raw.github.com/CreateJS/SoundJS/master/lib/soundjs-NEXT.min'
+                    ]
+
+                shim: 
+                    preloadjs: 
+                        exports: 'createjs.LoadQueue'
+                    soundjs: 
+                        exports: 'createjs.Sound'
