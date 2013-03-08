@@ -1,4 +1,4 @@
-createjs + require.js
+HTML5 Audio Demos
 ======================
 
 This is a demo showing usage of using [require.js](http://requirejs.org/) to load various
@@ -17,4 +17,4 @@ with different file formats, capabilites, etc.
 Demo
 ----
 
-[http://createjs-amd.herokuapp.com/](http://createjs-amd.herokuapp.com/)
+[http://html5-audio.herokuapp.com/](http://html5-audio.herokuapp.com/)
