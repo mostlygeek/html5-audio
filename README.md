@@ -1,20 +1,18 @@
 createjs + require.js
 ======================
 
-This is a demo showing usage of using [require.js](http://requirejs.org/) to load [PreloadJS](http://www.createjs.com/#!/PreloadJS) and [SoundJS](http://www.createjs.com/#!/SoundJS) from 
-the [CreateJS](http://www.createjs.com) project.
+This is a demo showing usage of using [require.js](http://requirejs.org/) to load various
+HTML audio libaries. It also demonstrates the capabilities of each library to handle 
+playing a sound file multiple times. 
 
-This small demo shows how to create a require.js *shim* for the libraries and then include them via the standard
-require.js `define` and `require` apis. 
+This project started out as an example of loading [SoundJS](https://github.com/CreateJS/SoundJS) using require.js. It has
+evolved to include other sound libraries such as [howler.js](https://github.com/goldfire/howler.js/).
 
 Why? 
 ----
 
-Sound in HTML5 games is generally pretty crappy. SoundJS is designed to fill in some of the gaps and difference between browsers to make development easier. This demo is an educational tool to test: 
-
-* preloading of assets
-* playing sounds triggered by events (any play latency)
-* playing multiple sounds at once. The `<audio>` tag can not do this natively. 
+Sound in HTML5 games is generally pretty crappy. Support varies widely per browser
+with different file formats, capabilites, etc. 
 
 Demo
 ----

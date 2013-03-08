@@ -1,34 +1,49 @@
 doctype 5
 html
     head
-        title RequireJS + SoundJS + PreloadJS 
+        title HTML5 Audio Libary Demos (+require.js Loading)
         link(href="/css/test.css",rel="stylesheet")
 
     body
-        h1 RequireJS + SoundJS + PreloadJS
+        h1 HTML5 Audio Libary Demos (+require.js Loading)
         .panel
             :markdown
                 ## About
 
-                Demonstration of loading [CreateJS](http://createjs.com) libraries using 
-                [require.js](http://requirejs.org/).
+                Demo of various HTML5 sound libraries
 
-                The demos show case using PreloadJS and SoundJS together. There are two 
-                demos, one showing the older soundjs-0.3.0 and the latest soundjs-0.4.0.
+                ### Loading
+                All library loading are done using [require.js](http://requirejs.org/). In a large
+                HTML5 application, like a game, it is important to keep JS source modular. These
+                demos serve as an example of how to the different sound libraries even if they 
+                don't support [AMD](http://requirejs.org/docs/whyamd.html) loading.
+        
+                ### SoundJS + PreloadJS
+
+                Preload and SoundJS are from the CreateJS project and have more production apps
+                built with them. 
 
                 * [SoundJS 0.3.0](/sound-js-0.3.0)
                 * [SoundJS 0.4.0](/sound-js-0.4.0)
                 * [SoundJS NEXT](/sound-js-NEXT) - uses latest code with fixes for Firefox.
 
-                ## Note
+                #### Note
 
                 SoundJS 0.4.0 has issues playing multiple channels
-                on Firefox (v19) as of this writing. It works perfectly in 
+                on Firefox (v19). It works as expected in 
                 in Chrome and its [WebAudio API](http://bit.ly/Z5dHLz).
 
                 The SoundJS NEXT library is the latest version on the 
                 [Github Repo](https://raw.github.com/CreateJS/SoundJS/). It includes
                 fixes for the above Firefox `<audio>` issues.
+
+                ### Howler.js
+
+                This demos [howler.js](https://github.com/goldfire/howler.js), a newer HTML5 Audio 
+                library that supports the WebAudio API and falls back to `<audio>` tags when necessary.
+
+                * [howler.js demo](/howler)
+
                 
         a(href="https://github.com/mostlygeek/createjs-requirejs")
             img(
@@ -36,5 +51,4 @@ html
                 src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png",
                 alt="Fork me!"
             )
-
 

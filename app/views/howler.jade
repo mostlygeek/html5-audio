@@ -1,0 +1,28 @@
+doctype 5
+html
+    head
+        title Howler Demo | HTML5 Audio
+        link(href="/css/test.css",rel="stylesheet")
+        :coffeescript
+            howlUrl = "https://raw.github.com/goldfire/howler.js/master/howler"
+            window.require =
+                waitSeconds: 1
+                paths: 
+                    jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min"
+                    Howler: howlUrl
+                shim: 
+                    Howler: 
+                        exports: "Howler"
+
+
+        script(
+            src='https://raw.github.com/jrburke/requirejs/2.1.5/require.js', 
+            data-main="/js/main-howler"
+        )
+
+    body
+
+        h1 Howler JS Demo
+
+        include ./common/nav
+        include ./common/demo-src

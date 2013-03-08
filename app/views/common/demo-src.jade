@@ -1,0 +1,32 @@
+#loading.panel
+    h1 Loading...
+    span Percent: 
+    span#progress 0%
+
+#control.panel(style="display: none")            
+    h2 onClick Triggering Demo
+
+    button#laser
+        span Laser Beam
+    p.note
+        | Plays the laser beam sound for every click.  Sounds should
+        | play as fast as you can click.
+
+    button#multi-shot
+        span 5x Laser Multi-Shot
+    p.note 
+        | Plays the laser beam sound 5 times with a 150ms delay between each
+        | play. Demos effectiveness of playing multiple sounds at once 
+        | from a single sound file. Also helps us slow clickers
+
+    h2 mouseover Demo        
+
+    - for (var i=0; i < 10; i++) { 
+        span.mouseover= i
+    - }
+
+    p.note
+        | Plays a sound effect each time the mouse enters a block. This 
+        | demos effectiveness of playing the same sound file
+        | very quickly. 
+

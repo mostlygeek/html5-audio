@@ -60,3 +60,6 @@ module.exports = (app) ->
                         exports: 'createjs.LoadQueue'
                     soundjs: 
                         exports: 'createjs.Sound'
+
+    app.get '/howler', (req, res) ->
+        res.render "howler"
