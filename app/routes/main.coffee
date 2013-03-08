@@ -12,6 +12,7 @@ module.exports = (app) ->
             title: "PreloadJS v0.2.0 + SoundJS v0.3.0"
             config: 
                 paths: 
+                    jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min"
                     preloadjs: [
                         'http://code.createjs.com/preloadjs-0.2.0.min'
                     ] 
@@ -30,6 +31,7 @@ module.exports = (app) ->
             title: "PreloadJS v0.3.0 + SoundJS v0.4.0"
             config: 
                 paths: 
+                    jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min"
                     preloadjs: [
                         'http://code.createjs.com/preloadjs-0.3.0.min'
                     ] 
@@ -48,6 +50,7 @@ module.exports = (app) ->
             title: "PreloadJS v0.3.0 + SoundJS v.NEXT"
             config: 
                 paths: 
+                    jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min"
                     preloadjs: [
                         'http://code.createjs.com/preloadjs-0.3.0.min'
                     ] 

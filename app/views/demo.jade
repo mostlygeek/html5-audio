@@ -6,7 +6,9 @@ html
         script
             require = !{JSON.stringify(config)}
                 
-        script(src='/js/require-jquery.min.js',data-main="/js/main")
+        script(
+            src='https://raw.github.com/jrburke/requirejs/2.1.5/require.js', 
+            data-main="/js/main")
 
     body
         h1 #{title}

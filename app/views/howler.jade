@@ -4,16 +4,14 @@ html
         title Howler Demo | HTML5 Audio
         link(href="/css/test.css",rel="stylesheet")
         :coffeescript
-            howlUrl = "https://raw.github.com/goldfire/howler.js/master/howler"
             window.require =
                 waitSeconds: 1
                 paths: 
                     jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min"
-                    Howler: howlUrl
+                    Howler: "https://raw.github.com/goldfire/howler.js/53eb5e72981ba867e026d203502b7b343009bfee/howler"
                 shim: 
                     Howler: 
                         exports: "Howler"
-
 
         script(
             src='https://raw.github.com/jrburke/requirejs/2.1.5/require.js', 
@@ -22,7 +20,7 @@ html
 
     body
 
-        h1 Howler JS Demo
+        h1 howler.js v1.0.11 Demo
 
         include ./common/nav
         include ./common/demo-src
