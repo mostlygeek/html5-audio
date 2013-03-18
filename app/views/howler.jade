@@ -8,10 +8,10 @@ html
                 waitSeconds: 1
                 paths: 
                     jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min"
-                    Howler: "https://raw.github.com/goldfire/howler.js/53eb5e72981ba867e026d203502b7b343009bfee/howler"
-                shim: 
-                    Howler: 
-                        exports: "Howler"
+
+                    # w/ AMD support requires no shim
+                    Howler: "https://raw.github.com/mostlygeek/howler.js/add-amd-support/howler"
+                    Howl: "https://raw.github.com/mostlygeek/howler.js/add-amd-support/howler"
 
         script(
             src='https://raw.github.com/jrburke/requirejs/2.1.5/require.js', 

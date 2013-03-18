@@ -1,12 +1,14 @@
 require [
     "jquery"
     "Howler"
+    "Howl"
 ], (
     $
 
     # Loading up Howler gives us a global Howl object...
     # ... i shall PullRequest in some AMD support
     Howler
+    Howl
 ) ->
     $progress = $('#progress')
 
