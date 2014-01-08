@@ -3,16 +3,16 @@
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
-      "coffee-script": "1.4.x"
-    , "underscore" : "*"
-    , "express": "3.x" 
-    , "jade": "latest"
-    , "stylus": "latest"
-    , "nib": "latest"
-    , "connect-coffee-script" : "latest"
-    , "markdown": "0.3.1"
-    , "which": "*"
-    , "async" : "0.1.x"
+      "coffee-script": "1.6.3"
+    , "underscore" : "1.4.4"
+    , "express": "3.2.6" 
+    , "jade": "0.35.0"
+    , "stylus": "0.37.0"
+    , "nib": "1.0.1"
+    , "connect-coffee-script" : "0.1.6"
+    , "markdown": "0.4.0"
+    , "async" : "0.2.9"
+    , "which" : "1.0.5"
   }, "scripts": {
     "test": "mocha --require should --compilers coffee:coffee-script --colors"
   }, "devDependencies": {

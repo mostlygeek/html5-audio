@@ -6,21 +6,19 @@ html
         :coffeescript
             window.require =
                 waitSeconds: 1
-                paths: 
+                paths:
                     jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min"
 
-                    # w/ AMD support requires no shim
-                    Howler: "https://raw.github.com/mostlygeek/howler.js/add-amd-support/howler"
-                    Howl: "https://raw.github.com/mostlygeek/howler.js/add-amd-support/howler"
+                    Howler: "/js/libs/howler.min"
 
         script(
-            src='https://raw.github.com/jrburke/requirejs/2.1.5/require.js', 
+            src='/js/libs/require.js',
             data-main="/js/main-howler"
         )
 
     body
 
-        h1 howler.js v1.0.11 Demo
+        h1 howler.js v1.1.15 Demo
 
         include ./common/nav
         include ./common/demo-src
