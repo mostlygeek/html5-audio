@@ -36,7 +36,6 @@ require [
     # ghetto loader...
     waitFor = 0
     onLoad = ->
-        console.log "loaded"
         waitFor = waitFor + 1
         $progress.text "#{Math.floor(waitFor/3)*100}%"
         bindUI() if waitFor == 3
